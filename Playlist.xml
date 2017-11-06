@@ -1,8 +1,14 @@
+<!--This page displays the playlists page. There is a list of rows where the title of the song, its image
+    the artist and two icons to up and downvote the songs. 
+    @Author: Octavia Smith with guidance from Preson Wang-Stausser-Bassett
+    @Date November 3, 2017
+ -->
+
 <Page navigatingTo="onNavigatingTo" xlmns="https://www.nativescript.org/tns.xsd">
 
 <ActionBar title="PlayList" class="action-bar"></ActionBar>
 
-
+<!--Dynamically stacks the information-->
     <ListView id="Songs" items="{{ myItems }}">
             <ListView.itemTemplate>
                 <StackLayout orientation ="horizontal" >
