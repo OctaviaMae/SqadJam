@@ -1,0 +1,17 @@
+<Page navigatingTo="onNavigatingTo" xlmns="https://www.nativescript.org/tns.xsd">
+
+    <ActionBar title=" Create a " class="action-bar"></ActionBar>
+
+    <StackLayout orientation="vertical" id="swipable">
+        <!--<TextField hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+        <TextField hint="Password" secure="true" />
+
+        <image src ="http://clipart-library.com/img1/967879.png" horizontalAlignment="center" style= "width: 50%; height: 50%" ></image>
+        -->
+        <Label id = "newGroup" text= "Create a Group Name" hoizontalAllignment= "center" fontAttributes="Bold" forntAttribute ="Italic"></Label>
+        <Label id = "newGroupPassword" text= "Your Group passcode is:"></Label>
+        <TextField id=" groupName" hint = " new name" autocorrect="false" autocapitalizationType="none"></TextField>
+        <Button id= "createNewGroup" text="Create" class="link" tap= "createNew"/>
+
+    </StackLayout>
+</Page>

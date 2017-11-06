@@ -1,0 +1,25 @@
+#logo  {
+     font: italic bold 50px;
+     color: black;
+     position: relative;
+     text-align: center;
+     margin-top: 20px;
+ }
+Button {
+    margin: 10;
+    padding: 10;
+    background-color: black;
+
+}
+
+#join{
+
+color: white;
+}
+
+
+#Create{
+
+background-color: transparent;
+color: white;
+}

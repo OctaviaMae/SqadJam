@@ -1,0 +1,22 @@
+<Page navigatingTo="onNavigatingTo" xlmns="https://www.nativescript.org/tns.xsd">
+
+<ActionBar title="PlayList" class="action-bar"></ActionBar>
+
+
+    <ListView id="Songs" items="{{ myItems }}">
+            <ListView.itemTemplate>
+                <StackLayout orientation ="horizontal" >
+                    <!--<Label text="{{ img }}" textWrap="true" class="title" />
+                    <Label text="{{ name }}" textWrap="true" class="title" /> -->
+                    <Label text="{{ artist }}" textWrap="true" class="title" />
+                    <Label text="{{ name }}" textWrap="true" class="title" />
+                    <Button text = "Like"></Button>
+                    <Button text = "Dislike"></Button>
+                </StackLayout>
+            </ListView.itemTemplate>
+     </ListView>
+</Page>
+
+
+
+
