@@ -1,3 +1,14 @@
+/*The functionality of this file is display the playlist StackView object that is created
+in Playlist.xml. This file is also responsible for the UI features suck as button typing,
+swiping and populating our lists from the http request.
+
+@Author Octavia Smith, Raphael Wies, Eric Hartig with help from Preston Wang-Stausser-Basset
+@Date November 3, 2017
+
+
+
+*/
+
 var gestures = require('ui/gestures');
 var frameModule = require('ui/frame');
 var listViewModule = require('ui/list-view');
