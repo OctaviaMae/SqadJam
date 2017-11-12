@@ -8,6 +8,7 @@ swiping and populating our lists from the http request.
 var gestures = require('ui/gestures');
 var frameModule = require('ui/frame');
 var listViewModule = require('ui/list-view');
+const request = require('request');
 
 
 
@@ -35,11 +36,15 @@ var navigateLogin = {
      }
    });*/
 
-     ///page.bindingContext = listViewModel;
+     ///page.bindingContext = listViewModel
+   var searchString = "Hello";
+   request.get('http://songapp.ddns.net:8000/api/search:'+searchString, (error, response, body) => {
+     let json = JSON.parse(body.entries);
+      page.bindingContext = json;
+     );
+   });
      
-     page.bindingContext = {
-        myItems: [{ artist: 'name1' , name: 'name2' }]
-     };
+    
    }
 
    exports.goBack = function() {
