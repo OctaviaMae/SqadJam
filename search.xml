@@ -1,0 +1,27 @@
+<!--This page displays the search results page. There is a list of rows where the title of the song, its image
+    the artist and two icons to up and downvote the songs. 
+    @Author: Raphael Wieland (Based off playlist.xml by Octavia Smith with guidance from Preson Wang-Stausser-Bassett)
+    @Date November 12, 2017
+ -->
+
+<Page navigatingTo="onNavigatingTo" xlmns="https://www.nativescript.org/tns.xsd">
+
+<ActionBar title="Search" class="action-bar"></ActionBar>
+
+<!--Dynamically stacks the information-->
+    <ListView id="Songs" items="{{ entries }}">
+            <ListView.itemTemplate>
+                <StackLayout orientation ="horizontal" >
+                    <Image src={{ img }} />
+                    <!--<Label text="{{ img }}" textWrap="true" class="title" />
+                    <Label text="{{ name }}" textWrap="true" class="title" /> -->
+                    <Label text="{{ artist }}" textWrap="true" class="title" />
+                    <Label text="{{ name }}" textWrap="true" class="title" />
+                    <Button text = "Add"></Button>
+                </StackLayout>
+            </ListView.itemTemplate>
+     </ListView>
+</Page>
+
+
+
