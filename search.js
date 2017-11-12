@@ -41,7 +41,6 @@ var navigateLogin = {
    request.get('http://songapp.ddns.net:8000/api/search:'+searchString, (error, response, body) => {
      let json = JSON.parse(body.entries);
       page.bindingContext = json;
-     );
    });
      
     
