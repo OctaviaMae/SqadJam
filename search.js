@@ -23,6 +23,26 @@ var navigateLogin = {
  }
  };
 
+
+exports.onSubmit = function(args){
+
+var searchBar = args.object;
+var searchValue = searchBar.text.toLowerCase();
+
+var url = "http://46cdb31b.ngrok.io/api/search/" + searchValue;
+
+console.log(url);
+
+fetchModule.fetch(url).then(response => {return response.json();}).then(function(r){
+      console.log(JSON.stringify(r.entries));
+       page.bindingContext = r;
+       console.log("DONE");
+
+
+       }
+     );
+}
+/*
  function onNavigatingTo(args) {
    var page = args.object;
    
@@ -34,7 +54,7 @@ var navigateLogin = {
        // When swiping right, navigate home using the behavior defined in the global navigateHome object
        frameModule.topmost().navigate(navigateLogin);
      }
-   });*/
+   });
 
      ///page.bindingContext = listViewModel
    var searchString = "Hello";
@@ -43,9 +63,9 @@ var navigateLogin = {
       page.bindingContext = json;
    });
      
-    
-   }
 
+   }
+*/
    exports.goBack = function() {
      frameModule.topmost().navigate(navigateLogin);
    };
