@@ -4,7 +4,12 @@
     @Date November 3, 2017
  -->
 
-<Page navigatingTo="onNavigatingTo" xlmns="https://www.nativescript.org/tns.xsd">
+ <ActionBar title="PlayList" class="action-bar">
+    <StackLayout orientation ="horizontal" >
+    <NavigationButton text="" android.systemIcon="ic_menu_back" tap="onNavBtnTap"/>
+    </StackLayout>
+ </ActionBar>
+
 
 <ActionBar title="PlayList" class="action-bar"></ActionBar>
 
